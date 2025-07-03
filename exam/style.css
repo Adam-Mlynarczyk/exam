@@ -60,3 +60,10 @@ button:hover{
     border: 3px solid greenyellow;
     background-color: rgb(92, 161, 78);
 }
+
+
+ol{
+    margin: 0 auto;
+    width: 20%;
+    font-size: 15px;
+}
