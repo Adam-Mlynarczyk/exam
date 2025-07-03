@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div class="input-field">
+            <label for="name">Full name:</label>
+            <input type="name" name="name" id="name">
+        </div>
+        <div class="input-field">
+            <label for="email">Email address:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="input-field">
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age">
+        </div>
+        <button type="button" onclick="validate()">Submit</button> <!--type="button" is needed, otherwise the form refreshes the page-->
+    </form>
+    <div id="feedback" hidden>Added succesfully!</div>
+    <ol id="people-list"></ol>
+</body>
+</html>
