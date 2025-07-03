@@ -1,4 +1,3 @@
-//let users=[];
 function validate(){
     feedback=document.getElementById("feedback");
     feedback.removeAttribute("hidden");
@@ -6,11 +5,10 @@ function validate(){
     n=document.getElementById("name").value;
     e=document.getElementById("email").value;
     a=document.getElementById("age").value;
-    if(n!=null && e!=null && a!=null && n!="" && e!="" && a>=18){
-        //users.push(n
+    if(n!=null && e!=null && a!=null && h!=null && n!="" && e!="" && h!="" && a>=18){
         feedback.removeAttribute("style");
         feedback.innerHTML="Added succesfully!";
-        document.getElementById("people-list").innerHTML+=`<li>${n}, Email: ${e}, Age: ${a}</li>`;
+        document.getElementById("people-list").innerHTML+=`<li>${n}, Email: ${e}, Age: ${a}, Hobbies: ${h}</li>`;
     }
     else{
         feedback.style.color="brown";
